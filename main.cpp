@@ -12,7 +12,7 @@ int main()
 Shape* circles[1000];
 Shape* triangles[1000];
    cout << mm.free_circles() << " " << mm.free_circles() << endl;
-//for (int i = 0;i < 200; i++) {
+// for (int i = 0;i < 200; i++) {
    for (int j = 0; j < 1000; j++) {
       circles[j] = new Circle(3.2,Point(1.8,2.5));
       triangles[j] = new Triangle({0,0},{0,2},{2,0});
@@ -22,9 +22,11 @@ Shape* triangles[1000];
       delete circles[j];
       delete triangles[j];
    }
-//}
-   cout << mm.free_circles() << " " << mm.free_circles() << endl;
+
+// //}
+   cout << mm.free_circles() << " " << mm.free_circles() << endl; //1000,1000
    for (int j = 0; j < 10; j++) {
+      // cout << "j: " << j << endl;
       circles[j] = new Circle(3.2,Point(1.8,2.5));
       triangles[j] = new Triangle({0,0},{0,2},{2,0});
    }
